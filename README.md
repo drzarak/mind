@@ -1,6 +1,14 @@
 # Mind 🧠 - Mental Health & Life Coaching AI
 
+[![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Realtime%20API-412991?logo=openai)](https://platform.openai.com/docs/guides/realtime)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 An empathetic AI companion for mental health support and life coaching, powered by OpenAI's Realtime API.
+
+> **⚡ Quick Start**: [Get running in 5 minutes →](QUICKSTART.md)
 
 ## Features
 
