@@ -13,7 +13,8 @@ export default function Transcript({ items }: TranscriptProps) {
       {items.length === 0 && (
         <div className="text-center text-gray-500 mt-8">
           <p className="text-lg mb-2">Welcome to Mind 🧠</p>
-          <p>Your mental health and life coaching companion</p>
+          <p>Your personal ADHD & mental health companion</p>
+          <p className="text-sm mt-2">Dr. Zarak is here to listen and support you</p>
           <p className="text-sm mt-4">Start speaking to begin your session...</p>
         </div>
       )}
@@ -28,7 +29,7 @@ export default function Transcript({ items }: TranscriptProps) {
               <div className="flex items-start gap-2">
                 <div className="flex-1">
                   <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                    {item.role === 'user' ? 'You' : 'Mind Coach'}
+                    {item.role === 'user' ? 'You' : 'Dr. Zarak'}
                   </div>
                   {item.content && (
                     <div className="prose dark:prose-invert max-w-none">

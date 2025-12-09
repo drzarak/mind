@@ -28,15 +28,69 @@ export default function ResourcesSidebar() {
 
             <section>
               <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-2">
+                ADHD Resources
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="https://chadd.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    CHADD - ADHD Support
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://add.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    ADDA - Adult ADHD
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.understood.org/adhd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    Understood.org - ADHD Info
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-2">
                 Quick Coping Techniques
               </h3>
               <div className="space-y-2">
                 <details className="bg-white dark:bg-gray-800 p-3 rounded-lg">
                   <summary className="cursor-pointer font-medium text-sm">
+                    Pomodoro Technique (ADHD-Friendly)
+                  </summary>
+                  <div className="mt-2 text-xs text-gray-600 dark:text-gray-400">
+                    <p>Work in focused 25-minute chunks:</p>
+                    <ol className="list-decimal list-inside ml-2 mt-1">
+                      <li>Set timer for 25 minutes</li>
+                      <li>Focus on ONE task</li>
+                      <li>Take a 5-minute break</li>
+                      <li>Repeat 4 times</li>
+                      <li>Take a longer 15-30 min break</li>
+                    </ol>
+                  </div>
+                </details>
+
+                <details className="bg-white dark:bg-gray-800 p-3 rounded-lg">
+                  <summary className="cursor-pointer font-medium text-sm">
                     5-4-3-2-1 Grounding
                   </summary>
                   <div className="mt-2 text-xs text-gray-600 dark:text-gray-400">
-                    <p>Name:</p>
+                    <p>For anxiety - name:</p>
                     <ul className="list-disc list-inside ml-2 mt-1">
                       <li>5 things you can see</li>
                       <li>4 things you can touch</li>

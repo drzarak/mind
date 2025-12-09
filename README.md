@@ -1,4 +1,4 @@
-# Mind 🧠 - Mental Health & Life Coaching AI
+# Mind 🧠 - Dr. Zarak | ADHD & Mental Health AI Coach
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
@@ -6,17 +6,19 @@
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An empathetic AI companion for mental health support and life coaching, powered by OpenAI's Realtime API.
+Meet **Dr. Zarak** - Your personal AI mental health companion specializing in ADHD, anxiety, and life coaching. Powered by OpenAI's Realtime API for natural, empathetic voice conversations with evidence-based therapeutic support.
 
 > **⚡ Quick Start**: [Get running in 5 minutes →](QUICKSTART.md)
 
 ## Features
 
 - 🎤 **Real-time Voice Interaction**: Natural conversation with low-latency audio using OpenAI's Realtime API
-- 💙 **Empathetic Support**: AI trained specifically for mental health and life coaching conversations
+- 🧠 **Dr. Zarak AI Therapist**: Specialized persona with ADHD expertise and personalized therapeutic approach
+- 💙 **ADHD-Focused Support**: Evidence-based strategies for executive function, time management, RSD, and more
 - 📊 **Mood Tracking**: Track and share your emotional state
-- 🛡️ **Crisis Resources**: Immediate access to crisis helplines and support resources
-- 🧘 **Coping Techniques**: Built-in grounding exercises and breathing techniques
+- 💡 **Fun Facts & Quick Tips**: Engaging neuroscience insights and immediately actionable strategies
+- 🛡️ **Crisis Resources**: Immediate access to crisis helplines and ADHD support organizations
+- 🧘 **Coping Techniques**: Built-in grounding exercises, Pomodoro technique, and breathing methods
 - 🔒 **Privacy-Focused**: Your conversations are private and secure
 
 ## Getting Started

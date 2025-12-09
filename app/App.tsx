@@ -369,12 +369,12 @@ export default function App() {
       <header className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold">Mind 🧠</h1>
-            <p className="text-sm opacity-90">Your Mental Health & Life Coaching Companion</p>
+            <h1 className="text-2xl font-bold">Mind 🧠 | Dr. Zarak</h1>
+            <p className="text-sm opacity-90">Your ADHD & Mental Health Companion</p>
           </div>
           <div className="text-right text-sm">
             <p>Powered by OpenAI Realtime API</p>
-            <p className="text-xs opacity-75">Always here to listen and support</p>
+            <p className="text-xs opacity-75">Evidence-based support & guidance</p>
           </div>
         </div>
       </header>
