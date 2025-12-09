@@ -45,6 +45,8 @@ export async function recordAudio(
   const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
   const source = audioContext.createMediaStreamSource(stream);
   
+  // Note: createScriptProcessor is deprecated but still widely supported
+  // TODO: Migrate to AudioWorkletNode for better performance in future
   const processor = audioContext.createScriptProcessor(4096, 1, 1);
   processor.onaudioprocess = (e) => {
     const float32Data = e.inputBuffer.getChannelData(0);

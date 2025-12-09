@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getOpenAIKey } from '@/app/lib/envSetup';
+import { OPENAI_CHAT_API_URL } from '@/app/lib/constants';
 
 export async function POST(request: NextRequest) {
   try {
     const apiKey = getOpenAIKey();
     const body = await request.json();
 
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    const response = await fetch(OPENAI_CHAT_API_URL, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,

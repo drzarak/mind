@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getOpenAIKey } from '@/app/lib/envSetup';
+import { OPENAI_REALTIME_MODEL, DEFAULT_MAX_RESPONSE_TOKENS } from '@/app/lib/constants';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,12 +14,12 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: body.model || 'gpt-4o-realtime-preview-2024-12-17',
+        model: body.model || OPENAI_REALTIME_MODEL,
         voice: body.voice || 'sage',
         modalities: body.modalities || ['text', 'audio'],
         instructions: body.instructions || '',
         temperature: body.temperature || 0.8,
-        max_response_output_tokens: body.max_response_output_tokens || 4096,
+        max_response_output_tokens: body.max_response_output_tokens || DEFAULT_MAX_RESPONSE_TOKENS,
         ...body,
       }),
     });

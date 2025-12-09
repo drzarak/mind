@@ -8,6 +8,14 @@ import CrisisBanner from './components/CrisisBanner';
 import ResourcesSidebar from './components/ResourcesSidebar';
 import { ConversationItem } from './types';
 import { mentalHealthCoachAgent } from './agentConfigs/mentalHealthCoach';
+import {
+  OPENAI_REALTIME_API_URL,
+  OPENAI_REALTIME_MODEL,
+  DEFAULT_TEMPERATURE,
+  VAD_THRESHOLD,
+  VAD_PREFIX_PADDING_MS,
+  VAD_SILENCE_DURATION_MS,
+} from './lib/constants';
 
 export default function App() {
   const [items, setItems] = useState<ConversationItem[]>([]);
@@ -37,16 +45,16 @@ export default function App() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'gpt-4o-realtime-preview-2024-12-17',
+          model: OPENAI_REALTIME_MODEL,
           voice: 'sage',
           instructions: mentalHealthCoachAgent.instructions,
           modalities: ['text', 'audio'],
-          temperature: 0.8,
+          temperature: DEFAULT_TEMPERATURE,
           turn_detection: useVAD ? {
             type: 'server_vad',
-            threshold: 0.5,
-            prefix_padding_ms: 300,
-            silence_duration_ms: 500,
+            threshold: VAD_THRESHOLD,
+            prefix_padding_ms: VAD_PREFIX_PADDING_MS,
+            silence_duration_ms: VAD_SILENCE_DURATION_MS,
           } : null,
         }),
       });
@@ -141,7 +149,7 @@ export default function App() {
 
       // Send offer to OpenAI
       const sdpResponse = await fetch(
-        `https://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17`,
+        `${OPENAI_REALTIME_API_URL}?model=${OPENAI_REALTIME_MODEL}`,
         {
           method: 'POST',
           headers: {
