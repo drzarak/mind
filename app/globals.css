@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.message-user {
+  @apply bg-blue-100 dark:bg-blue-900 rounded-lg p-3 mb-2;
+}
+
+.message-assistant {
+  @apply bg-gray-100 dark:bg-gray-800 rounded-lg p-3 mb-2;
+}
+
+.message-tool {
+  @apply bg-green-100 dark:bg-green-900 rounded-lg p-2 mb-2 text-sm;
+}
+
+.audio-controls {
+  @apply fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 p-4;
+}
+
+.crisis-banner {
+  @apply bg-red-100 dark:bg-red-900 border-l-4 border-red-500 p-4 mb-4;
+}
+
+.mood-selector {
+  @apply grid grid-cols-4 gap-2 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg;
+}
+
+.mood-button {
+  @apply p-3 rounded-lg border-2 transition-all hover:scale-105 cursor-pointer;
+}
+
+.mood-button.selected {
+  @apply border-blue-500 bg-blue-50 dark:bg-blue-900;
+}

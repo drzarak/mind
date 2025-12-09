@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "OPENAI_API_KEY": {
+      "type": "secret",
+      "description": "OpenAI API Key for realtime audio and chat completions"
+    }
+  }
+}
